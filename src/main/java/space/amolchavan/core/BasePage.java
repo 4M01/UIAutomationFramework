@@ -19,7 +19,7 @@ import java.util.List;
 @Getter @Setter
 public class BasePage {
     public WebDriverClient webDriverClient= null;
-    public static String LOADER = "//*[contains(@class,'az-loader') or contains(@id,'loaderId') or contains(@class,'spiner')]";
+    public static String LOADER = "//*[contains(@class,'loader') or contains(@id,'loaderId') or contains(@class,'spiner')]";
     private final By breadcrumbList=By.xpath("//div[contains(@class,'breadcrumb') and @id]");
     private final String breadcrumbItem="//div[contains(@class,'breadcrumb') and text()='%s']";
 

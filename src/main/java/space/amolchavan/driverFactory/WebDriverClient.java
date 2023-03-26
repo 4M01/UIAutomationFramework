@@ -61,7 +61,7 @@ public class WebDriverClient {
         driver.manage().timeouts().implicitlyWait(implicitWait);
     }
 
-    public static String LOADER = "//div[contains(@class,'az-loader') or ]";
+    public static String LOADER = "//div[contains(@class,'loader') or ]";
 
     public void waitForSpinnerToDisappear() throws Exception {
         waitForPageLoad();

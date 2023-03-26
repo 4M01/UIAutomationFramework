@@ -150,14 +150,14 @@ public class BaseTest {
     }
 
     private void uploadReportToGoogleStorage() throws IOException {
-        String jsonPath  = System.getProperty("user.dir")+"/src/main/resources/kloojj-2-0-dev-1729c558ab70.json";
+        String jsonPath  = System.getProperty("user.dir")+"/src/main/resources/test.json";
         String[] path = ExtentReporter.reportFilePath.split("/");
         String folder = path[path.length - 1];
         folder = this.env+"/"+this.productName+"/"+this.appName+"/"+this.moduleName+"/"+this.buildVersion+ "/"+this.tenant.toUpperCase()+"/"+folder ;
 
         File[] files = new File(ExtentReporter.reportFilePath).listFiles();
-        String bucket = "abcl-automation-reports";
-        String projectId = "Kloojj-2-0-Dev";
+        String bucket = "automation-reports";
+        String projectId = "2-0-Dev";
 
         RetrySettings retrySettings =
                 StorageOptions.getDefaultRetrySettings()
