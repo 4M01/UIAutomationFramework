@@ -23,7 +23,7 @@ public class DTO {
      * This method accepts two parameters and create static DTO object that can be used anywhere in the test
      * @param: env - example test/staging/prod
      * @param: parameter it could be moduleName or appName eg. eic/mediaplugin/sdp
-     * @param : tenant -it could be Jagzu/Abcl/Seta
+     * @param : tenant 
      * @author: Amol Chavan*/
     public void createTestData(String env, String parameter,String tenant) {
         parameter = parameter.toLowerCase();
